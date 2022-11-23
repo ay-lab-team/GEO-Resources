@@ -3,6 +3,24 @@ The main point of this repository is to create cell type information at the Ay L
 
 For this first iteration we are parsing individual pages from Cellosaurus but eventually we want to download the whole Cellosaurus catalog which is available through: https://ftp.expasy.org/databases/cellosaurus/. From this FTP link there are three files that can be parsed: 1) tbd, 2) tbd, 3) tbd. As soon as we find good parsers we will decide on which file to use. 
 
+# Steps
+## Using the entire cellosaurus database
+```
+git clone https://gitlab.lji.org/ay-lab-team/cell-type-resources.git
+cd cell-type-resources
+wget https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt
+
+# Go to https://docs.google.com/spreadsheets/d/1myw--D1_jMa3UFEUPyLy5C3MnbfcJzLIIJEoCS_3X4k/edit#gid=1154000703
+# Select the cellosaurus column and ctrl + c
+# Ctrl + v to google_sheet.txt
+grep ‘^[\C]’ google_sheet.txt > accesions.txt
+
+brew install pcre
+cat IDs.txt | awk '{gsub("_","\\_",$0);$0="(?s)^>"$0".*?(?=\\n(\\z|>))"}1' | pcregrep -oM -f - f1.fasta
+```
+## wget specific cellosaurus .txt files
+```
+```
 
 ## Getting started
 
