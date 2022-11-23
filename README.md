@@ -1,5 +1,7 @@
 # Cell Type Resources
+The main point of this repository is to create cell type information at the Ay Lab finds reliable and easily usable from a programming/analysis standpoint. This initially started from the HiChIP website project but we wanted to keep it general for use across all projects.
 
+For this first iteration we are parsing individual pages from Cellosaurus but eventually we want to download the whole Cellosaurus catalog which is available through: https://ftp.expasy.org/databases/cellosaurus/. From this FTP link there are three files that can be parsed: 1) tbd, 2) tbd, 3) tbd. As soon as we find good parsers we will decide on which file to use. 
 
 
 ## Getting started
