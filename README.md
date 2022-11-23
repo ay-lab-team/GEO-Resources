@@ -15,11 +15,17 @@ wget https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt
 # Ctrl + v to google_sheet.txt
 grep ‘^[\C]’ google_sheet.txt > accesions.txt
 
+# only know how to grep blocks separated by >, like fastq format: https://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/subsetFASTAFASTAQ.html
 brew install pcre
 cat IDs.txt | awk '{gsub("_","\\_",$0);$0="(?s)^>"$0".*?(?=\\n(\\z|>))"}1' | pcregrep -oM -f - f1.fasta
 ```
 ## wget specific cellosaurus .txt files
 ```
+mkdir raw_cellosaurus; mkdir filtered_cellosaurus
+cd raw_cellosaurus
+while read AC; do wget https://www.cellosaurus.org/${AC}.txt; done <../accessions.txt
+for f in ./*; do grep -w 'AC\|Derived\|NCIt\|SX\|AG\|CA' $f > ../filtered_cellosaurus/$(basename $f .txt)_filtered.txt; done
+cd filtered_cellosaurus
 ```
 
 ## Getting started
