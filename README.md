@@ -19,6 +19,7 @@ grep ‘^[\C]’ google_sheet.txt > accesions.txt
 brew install pcre
 cat IDs.txt | awk '{gsub("_","\\_",$0);$0="(?s)^>"$0".*?(?=\\n(\\z|>))"}1' | pcregrep -oM -f - f1.fasta
 ```
+
 ## wget specific cellosaurus .txt files
 ```
 mkdir raw_cellosaurus; mkdir filtered_cellosaurus
@@ -26,6 +27,29 @@ cd raw_cellosaurus
 while read AC; do wget https://www.cellosaurus.org/${AC}.txt; done <../accessions.txt
 for f in ./*; do grep -w 'AC\|Derived\|NCIt\|SX\|AG\|CA' $f > ../filtered_cellosaurus/$(basename $f .txt)_filtered.txt; done
 cd filtered_cellosaurus
+
+echo -e "" ../celltype.csv
+echo -e "AC,CC,DT,SX,AG,CA" > ../celltype.csv
+for f in ./*; do
+ac=$(grep "AC" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+cc=$(grep "CC" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+di=$(grep "DI" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+sx=$(grep "SX" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+ag=$(grep "AG" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+ca=$(grep "CA" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+
+echo -e "${ac},${cc},${di},${sx},${ag},${ca}" >> ../celltype.csv
+done
+```
+
+## trash
+```
+# To transpose each file
+cut -d " " -f1 $f > header_lines.txt
+paste -d "\t" -s header_lines.txt > header.txt
+cut -f2- -d ' ' $f | awk '{ gsub(/  /,""); print }' > body_lines.txt
+paste -d "\t" -s body_lines.txt > body.txt
+rm header_lines.txt header.txt body_lines.txt body.txt
 ```
 
 ## Getting started
