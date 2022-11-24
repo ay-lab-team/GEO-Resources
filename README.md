@@ -4,8 +4,37 @@ The main point of this repository is to create cell type information at the Ay L
 For this first iteration we are parsing individual pages from Cellosaurus but eventually we want to download the whole Cellosaurus catalog which is available through: https://ftp.expasy.org/databases/cellosaurus/. From this FTP link there are three files that can be parsed: 1) tbd, 2) tbd, 3) tbd. As soon as we find good parsers we will decide on which file to use. 
 
 # Steps
-## Using the entire cellosaurus database
+## wget specific cellosaurus .txt files
 ```
+git clone https://gitlab.lji.org/ay-lab-team/cell-type-resources.git
+cd cell-type-resources
+
+mkdir raw_cellosaurus; mkdir filtered_cellosaurus
+
+cd raw_cellosaurus
+while read AC; do wget https://www.cellosaurus.org/${AC}.txt; done <../accessions.txt
+
+for f in ./*; do grep -w 'AC\|Derived\|NCIt\|SX\|AG\|CA' $f > ../filtered_cellosaurus/$(basename $f .txt)_filtered.txt; done
+cd filtered_cellosaurus
+
+echo -e "" > ../celltype.csv
+echo -e "AC,CC,DT,SX,AG,CA" > ../celltype.csv
+
+for f in ./*; do
+ac=$(grep "AC" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+cc=$(grep "CC" $f | rev | cut -f1 -d ':' | rev | awk '{ gsub(/  /,""); print }' | rev | cut -d ':' -f1 | rev)
+di=$(grep "DI" $f | rev | cut -f1 -d ';' | cut -f1 -d ',' | rev | awk '{ gsub(/  /,""); print }')
+sx=$(grep "SX" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+ag=$(grep "AG" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+ca=$(grep "CA" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
+echo -e "${ac},${cc},${di},${sx},${ag},${ca}" >> ../celltype.csv
+done
+# open celltype.csv in excel
+```
+
+## trash
+```
+# Using the entire cellosaurus database
 git clone https://gitlab.lji.org/ay-lab-team/cell-type-resources.git
 cd cell-type-resources
 wget https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt
@@ -18,32 +47,7 @@ grep ‘^[\C]’ google_sheet.txt > accesions.txt
 # only know how to grep blocks separated by >, like fastq format: https://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/subsetFASTAFASTAQ.html
 brew install pcre
 cat IDs.txt | awk '{gsub("_","\\_",$0);$0="(?s)^>"$0".*?(?=\\n(\\z|>))"}1' | pcregrep -oM -f - f1.fasta
-```
 
-## wget specific cellosaurus .txt files
-```
-mkdir raw_cellosaurus; mkdir filtered_cellosaurus
-cd raw_cellosaurus
-while read AC; do wget https://www.cellosaurus.org/${AC}.txt; done <../accessions.txt
-for f in ./*; do grep -w 'AC\|Derived\|NCIt\|SX\|AG\|CA' $f > ../filtered_cellosaurus/$(basename $f .txt)_filtered.txt; done
-cd filtered_cellosaurus
-
-echo -e "" ../celltype.csv
-echo -e "AC,CC,DT,SX,AG,CA" > ../celltype.csv
-for f in ./*; do
-ac=$(grep "AC" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-cc=$(grep "CC" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-di=$(grep "DI" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-sx=$(grep "SX" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-ag=$(grep "AG" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-ca=$(grep "CA" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-
-echo -e "${ac},${cc},${di},${sx},${ag},${ca}" >> ../celltype.csv
-done
-```
-
-## trash
-```
 # To transpose each file
 cut -d " " -f1 $f > header_lines.txt
 paste -d "\t" -s header_lines.txt > header.txt
