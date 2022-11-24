@@ -1,0 +1,79 @@
+AC,CC,DT,SX,AG,CA
+CVCL_0004, Pleural effusion., BCR-ABL1 positive,Female,53Y,Cancer cell line
+CVCL_0006, Peripheral blood., Childhood acute monocytic leukemia,Male,1Y,Cancer cell line
+CVCL_0030, Uterus; cervix., Human papillomavirus-related endocervical adenocarcinoma,Female,30Y6M,Cancer cell line
+CVCL_0031, Pleural effusion., Invasive breast carcinoma of no special type,Female,69Y,Cancer cell line
+CVCL_0038, Back; skin; epidermis. Cell type=Keratinocyte.,,Male,62Y,Spontaneously immortalized cell line
+CVCL_0062, Pleural effusion., Breast adenocarcinoma,Female,51Y,Cancer cell line
+CVCL_0063, Fetal kidney.,,Female,Fetus,Transformed cell line
+CVCL_0065, Peripheral blood. Cell type=T-cell., Childhood T acute lymphoblastic leukemia,Male,14Y,Cancer cell line
+CVCL_0076, Ascites., Gastric adenocarcinoma,Female,33Y,Cancer cell line
+CVCL_0080,, Ewing sarcoma,Female,15Y,Cancer cell line
+CVCL_0092, Peripheral blood., Adult B acute lymphoblastic leukemia,Male,19Y,Cancer cell line
+CVCL_0165, Ascites., Primary effusion lymphoma,Male,40Y,Cancer cell line
+CVCL_0219, Colon; sigmoid., Colon adenocarcinoma,Female,55Y,Cancer cell line
+CVCL_0291, Colon., Colon carcinoma,Male,48Y,Cancer cell line
+CVCL_0294, Endometrium., Endometrial adenocarcinoma,Female,71Y,Cancer cell line
+CVCL_0347, Fetal lung. Cell type=Fibroblast.,,Female,16FW,Finite cell line
+CVCL_0418, Pericardial effusion., Breast adenocarcinoma,Female,48Y,Cancer cell line
+CVCL_0546, Colon., Colon adenocarcinoma,Male,51Y,Cancer cell line
+CVCL_0547, Lymph node., Colon adenocarcinoma,Male,51Y,Cancer cell line
+CVCL_0553, Pleural effusion., Invasive breast carcinoma of no special type,Female,54Y,Cancer cell line
+CVCL_0597, Ascites., Burkitt lymphoma,Male,3Y,Cancer cell line
+CVCL_0618, Pleural effusion., Breast carcinoma,Female,44Y,Cancer cell line
+CVCL_0630, Pleural effusion., Lung squamous cell carcinoma,Male,65Y,Cancer cell line
+CVCL_0J31, Pleural effusion., Clear cell sarcoma of soft tissue,Sex unspecified,Age unspecified,Cancer cell line
+CVCL_0T68, Ovary; surface epithelium. Cell type=Epithelial cell.,,Female,Age unspecified,Telomerase immortalized cell line
+CVCL_1079, Ascites., Primary effusion lymphoma,Male,46Y,Cancer cell line
+CVCL_1080, Pleural effusion., Primary effusion lymphoma,Male,85Y,Cancer cell line
+CVCL_1140, Lymph node., Lung small cell carcinoma,Male,63Y,Cancer cell line
+CVCL_1141, Pleural effusion., Lung small cell carcinoma,Male,55Y,Cancer cell line
+CVCL_1176, Pleural effusion., Lung small cell carcinoma,Female,50Y,Cancer cell line
+CVCL_1240, Peripheral blood. Cell type=T-cell., Sezary syndrome,Male,53Y,Cancer cell line
+CVCL_1256, Breast., Breast ductal carcinoma,Female,44Y,Cancer cell line
+CVCL_1294, Colon., Colon carcinoma,Sex unspecified,Age unspecified,Cancer cell line
+CVCL_1347, Esophagus., Esophageal squamous cell carcinoma,Male,54Y,Cancer cell line
+CVCL_1349, Esophagus., Esophageal squamous cell carcinoma,Male,53Y,Cancer cell line
+CVCL_1356, Esophagus., Esophageal squamous cell carcinoma,Male,77Y,Cancer cell line
+CVCL_1377, Lung., Lung squamous cell carcinoma,Male,74Y,Cancer cell line
+CVCL_1386,, Cecum adenocarcinoma,Male,63Y,Cancer cell line
+CVCL_1395, Right buttock; hypodermis., Amelanotic melanoma,Male,33Y,Cancer cell line
+CVCL_1455, Lymph node., Lung small cell carcinoma,Male,73Y,Cancer cell line
+CVCL_1473, Bone marrow., Lung small cell carcinoma,Male,59Y,Cancer cell line
+CVCL_1489, Ascites., Lung small cell carcinoma,Male,61Y,Cancer cell line
+CVCL_1498,, Lung small cell carcinoma,Male,52Y,Cancer cell line
+CVCL_1503, Lymph node., Lung small cell carcinoma,Male,59Y,Cancer cell line
+CVCL_1516, Lymph node., Lung small cell carcinoma,Female,69Y,Cancer cell line
+CVCL_1520,, Lung squamous cell carcinoma,Female,70Y,Cancer cell line
+CVCL_1536, Pleural effusion., Lung small cell carcinoma,Male,50Y,Cancer cell line
+CVCL_1562, Pleural effusion., Lung small cell carcinoma,Male,61Y,Cancer cell line
+CVCL_1566,, Lung squamous cell carcinoma,Male,Age unspecified,Cancer cell line
+CVCL_1568, Lymph node., Lung small cell carcinoma,Male,63Y,Cancer cell line
+CVCL_1579, Pleural effusion., Lung small cell carcinoma,Male,55Y,Cancer cell line
+CVCL_1693,, Lung small cell carcinoma,Male,54Y,Cancer cell line
+CVCL_1844, Peripheral blood., Adult acute myeloid leukemia,Male,57Y,Cancer cell line
+CVCL_1881, Peripheral blood., Diffuse large B-cell lymphoma germinal center B-cell type,Male,48Y,Cancer cell line
+CVCL_1884, Peripheral blood., Mantle cell lymphoma,Male,61Y,Cancer cell line
+CVCL_2022, Peripheral blood., Childhood T acute lymphoblastic leukemia,Male,13Y,Cancer cell line
+CVCL_2057, Lung., Lung squamous cell carcinoma,Male,47Y,Cancer cell line
+CVCL_2092, Brain., Neuroblastoma,Female,1Y,Cancer cell line
+CVCL_2213, Bone; humerus., Ewing sarcoma,Male,22Y,Cancer cell line
+CVCL_2235, Bone; vertebra., Prostate carcinoma,Male,59Y,Cancer cell line
+CVCL_2529, Endometrium., Endometrial adenocarcinoma,Female,39Y,Cancer cell line
+CVCL_2914, Pleural effusion., Lung squamous cell carcinoma,Male,57Y,Cancer cell line
+CVCL_3174, Bone; jaw; mandible., Esophageal squamous cell carcinoma,Male,67Y,Cancer cell line
+CVCL_3684,,,Female,43Y,Transformed cell line
+CVCL_3728, Ascites., Primary effusion lymphoma,Male,52Y,Cancer cell line
+CVCL_4402, Pleural effusion., Lung squamous cell carcinoma,Male,Age unspecified,Cancer cell line
+CVCL_4654, Endometrium., Endometrial adenocarcinoma,Female,44Y,Cancer cell line
+CVCL_4966, Pleural effusion., Childhood T lymphoblastic lymphoma,Male,14Y,Cancer cell line
+CVCL_7526, Peripheral blood.,,Female,Age unspecified,Transformed cell line
+CVCL_9772,,,Female,Blastocyst stage,Embryonic stem cell
+CVCL_A426, Bone marrow., BCR-ABL1 positive,Male,40Y,Cancer cell line
+CVCL_A4BB, Umbilical vein. Cell type=Endothelial cell.,,Sex unspecified,<1D,Transformed cell line
+CVCL_A770,, Embryonal rhabdomyosarcoma,Male,1Y,Cancer cell line
+CVCL_B470, Pleural effusion., Clear cell sarcoma of soft tissue,Female,16Y,Cancer cell line
+CVCL_HE02, Pleural effusion., Plasma cell myeloma,Female,67Y,Cancer cell line
+CVCL_HE03, Pleural effusion., Plasma cell myeloma,Female,67Y,Cancer cell line
+CVCL_IV72, Endometrium., Endometrial serous adenocarcinoma,Female,62Y,Cancer cell line
+CVCL_VI06, Umbilical cord blood. Cell type=Erythroid progenitor cell.,,Sex unspecified,<1D,Transformed cell line
