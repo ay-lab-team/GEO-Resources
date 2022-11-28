@@ -1,0 +1,11 @@
+.DS_Store
+.ipynb_checkpoints/
+f1.fasta
+filtered_cellosaurus/
+google_sheet.txt
+ori_celltype.csv
+IDs.txt
+accessions.txt
+raw_cellosaurus/
+cellosaurus.txt
+cellosaurus_filtered.txt
