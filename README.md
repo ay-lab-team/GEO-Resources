@@ -22,9 +22,9 @@ To get cellosaursu meta data for your favorite cell lines please:
 The header columns are AC (accession ID), CC (comments on where the sample is derived), DT (disease), SX (sex of cell), AG (age of donor at sampling), and CA (category). 
      1\) AC column have various values.
 
-     2\) CC column can have general sampling site and specific site separated by a semicolon, like "Uterus; cervix." Some cell lines' metadata even have cell type, like "Cell type=Keratinocyte." However, there're some cell lines' metadata that doesn't have sampling site information.
+     2\) CC column can have general sampling site and specific site separated by a semicolon, like "Uterus; cervix." Some cell lines' metadata even have cell type, like "Back; skin; epidermis. Cell type=Keratinocyte." However, there're some cell lines' metadata that doesn't have sampling site information, regardless of category.
      
-     3\) DT column have disease name from [NCI Thesaurus](https://www.ebi.ac.uk/ols/ontologies/ncit). If the cell line is non-cancerous, then the value is empty
+     3\) DT column have disease name from [NCI Thesaurus](https://www.ebi.ac.uk/ols/ontologies/ncit). If the cell line is non-cancerous, then the value is empty.
 
      4\) SX column have either "Male", "Female", or "Sex unspecified" value.
 
