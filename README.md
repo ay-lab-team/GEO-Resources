@@ -3,116 +3,18 @@ The main point of this repository is to create cell type information at the Ay L
 
 For this first iteration we are parsing individual pages from Cellosaurus but eventually we want to download the whole Cellosaurus catalog which is available through: https://ftp.expasy.org/databases/cellosaurus/. From this FTP link there are three files that can be parsed: 1) tbd, 2) tbd, 3) tbd. As soon as we find good parsers we will decide on which file to use. 
 
-# Steps
-## wget specific cellosaurus .txt files
-```
-git clone https://gitlab.lji.org/ay-lab-team/cell-type-resources.git
-cd cell-type-resources
-
-mkdir raw_cellosaurus; mkdir filtered_cellosaurus
-
-cd raw_cellosaurus
-while read AC; do wget https://www.cellosaurus.org/${AC}.txt; done <../accessions.txt
-
-for f in ./*; do grep -w 'AC\|Derived\|NCIt\|SX\|AG\|CA' $f > ../filtered_cellosaurus/$(basename $f .txt)_filtered.txt; done
-cd filtered_cellosaurus
-
-echo -e "" > ../celltype.csv
-echo -e "AC,CC,DT,SX,AG,CA" > ../celltype.csv
-
-for f in ./*; do
-ac=$(grep "AC" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-cc=$(grep "CC" $f | rev | cut -f1 -d ':' | rev | awk '{ gsub(/  /,""); print }' | rev | cut -d ':' -f1 | rev)
-di=$(grep "DI" $f | rev | cut -f1 -d ';' | cut -f1 -d ',' | rev | awk '{ gsub(/  /,""); print }')
-sx=$(grep "SX" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-ag=$(grep "AG" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-ca=$(grep "CA" $f | cut -f2- -d ' ' | awk '{ gsub(/  /,""); print }')
-echo -e "${ac},${cc},${di},${sx},${ag},${ca}" >> ../celltype.csv
-done
-# open celltype.csv in excel
-```
-
-## trash
-```
-# Using the entire cellosaurus database
-git clone https://gitlab.lji.org/ay-lab-team/cell-type-resources.git
-cd cell-type-resources
-wget https://ftp.expasy.org/databases/cellosaurus/cellosaurus.txt
-
-# Go to https://docs.google.com/spreadsheets/d/1myw--D1_jMa3UFEUPyLy5C3MnbfcJzLIIJEoCS_3X4k/edit#gid=1154000703
-# Select the cellosaurus column and ctrl + c
-# Ctrl + v to google_sheet.txt
-grep ‘^[\C]’ google_sheet.txt > accesions.txt
-
-# only know how to grep blocks separated by >, like fastq format: https://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/subsetFASTAFASTAQ.html
-brew install pcre
-cat IDs.txt | awk '{gsub("_","\\_",$0);$0="(?s)^>"$0".*?(?=\\n(\\z|>))"}1' | pcregrep -oM -f - f1.fasta
-
-# To transpose each file
-cut -d " " -f1 $f > header_lines.txt
-paste -d "\t" -s header_lines.txt > header.txt
-cut -f2- -d ' ' $f | awk '{ gsub(/  /,""); print }' > body_lines.txt
-paste -d "\t" -s body_lines.txt > body.txt
-rm header_lines.txt header.txt body_lines.txt body.txt
-```
-
 ## Getting started
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+To get cellosaursu meta data for your favorite cell lines please:
+<add instructions>
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+<show how to add ID's to accession>
 
-## Add your files
+<how commans to run>
+<describe code behaviorus>
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.lji.org/ay-lab-team/cell-type-resources.git
-git branch -M master
-git push -uf origin master
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.lji.org/ay-lab-team/cell-type-resources/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+<Show example output>
+<describe the table header and values including what missing data looks like>
 
 ## Visuals
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
