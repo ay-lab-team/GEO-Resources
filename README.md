@@ -6,14 +6,19 @@ For this first iteration we are parsing individual pages from Cellosaurus but ev
 ## Getting started
 
 To get cellosaursu meta data for your favorite cell lines please:
-1. Go to HiChIP Tracker Google Sheet https://docs.google.com/spreadsheets/d/1myw--D1_jMa3UFEUPyLy5C3MnbfcJzLIIJEoCS_3X4k/edit#gid=1154000703
-2. Click the Human Cell Types tab
+1. Go to [HiChIP Tracker Google Sheet](https://docs.google.com/spreadsheets/d/1myw--D1_jMa3UFEUPyLy5C3MnbfcJzLIIJEoCS_3X4k/edit#gid=1154000703)
+2. Click the "Human Cell Types" tab
 3. Select "Related Cellosaurus ID" column and copy the content to a file named "accessions.txt"
+<img src="sheet_column.png"
+     style="float: left; margin-right: 10px;" />
 4. You don't have to remove the empty rows in accessions.txt, but if you wish, you can run `sed -i '/^$/d' accessions.txt`
 5. Go to `cell-type-resources` directory and run `bash parsing_cellosaurus_samples.sh`
-<describe code behaviorus>
 
-<Show example output>
+    The code will download Cellosaurus sample metadata files that match the CVCL_xxxx accession IDs you provided, filter the sample metadata for only necessary rows, transpose these rows to a table, then concate it with other samples.
+
+6. Example output
+<img src="output.png"
+     style="float: left; margin-right: 10px;" />
 <describe the table header and values including what missing data looks like>
 
 ## Visuals
