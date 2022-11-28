@@ -6,11 +6,11 @@ For this first iteration we are parsing individual pages from Cellosaurus but ev
 ## Getting started
 
 To get cellosaursu meta data for your favorite cell lines please:
-<add instructions>
-
-<show how to add ID's to accession>
-
-<how commans to run>
+1. Go to HiChIP Tracker Google Sheet https://docs.google.com/spreadsheets/d/1myw--D1_jMa3UFEUPyLy5C3MnbfcJzLIIJEoCS_3X4k/edit#gid=1154000703
+2. Click the Human Cell Types tab
+3. Select "Related Cellosaurus ID" column and copy the content to a file named "accessions.txt"
+4. You don't have to remove the empty rows in accessions.txt, but if you wish, you can run `sed -i '/^$/d' accessions.txt`
+5. Go to `cell-type-resources` directory and run `bash parsing_cellosaurus_samples.sh`
 <describe code behaviorus>
 
 <Show example output>
