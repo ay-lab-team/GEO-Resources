@@ -16,7 +16,7 @@ To get cellosaursu meta data for your favorite cell lines please:
 
     The code will download Cellosaurus sample metadata files that match the CVCL_xxxx accession IDs you provided, filter the sample metadata for only necessary rows, transpose these rows to a table, then concate it with other samples.
 
-6. Example output
+6. Example output. This is what celltype.csv can look like:
 <img src="output.png"
      style="float: left; margin-right: 10px;" />
 The header columns are AC (accession ID), CC (comments on where the sample is derived), DT (disease), SX (sex of cell), AG (age of donor at sampling), and CA (category). 
