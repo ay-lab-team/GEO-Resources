@@ -32,3 +32,4 @@ do
 	echo -e "${ac},${cc},${di},${sx},${ag},${ca}" >> celltype.csv
 done
 
+sort -k1 -n -t, celltype.csv > sorted_celltype.csv
