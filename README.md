@@ -14,7 +14,7 @@ To get cellosaursu meta data for your favorite cell lines please:
 4. You don't have to remove the empty rows in accessions.txt, but if you wish, you can run `sed -i '/^$/d' accessions.txt`
 5. Go to `cell-type-resources` directory and run `bash parsing_cellosaurus_samples.sh`
 
-    The code will download Cellosaurus sample metadata files that match the CVCL_xxxx accession IDs you provided, filter the sample metadata for only necessary rows, transpose these rows to a table, then concate it with other samples.
+    The code will download Cellosaurus sample metadata files that match the CVCL_xxxx accession IDs you provided, filter the sample metadata for only necessary rows, transpose these rows to a table, then concate it with other samples. Lastly, this table will be sorted.
 
 6. Example output. This is what celltype.csv can look like:
 <img src="output.png"
