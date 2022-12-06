@@ -1,4 +1,4 @@
-Cellosaurus_ID,Identifier,Organ_Tissue,Cell_Type,Disease,Sex,Age,Category,Species
+Cellosaurus ID,Cell Line Name,Organ and/or Tissue,Cell Type,Disease,Sex,Age,Category,Species
 CVCL_0004,K-562,Pleural effusion,,BCR-ABL1 positive,Female,53Y,Cancer,Homo sapiens
 CVCL_0006,THP-1,Peripheral blood,,Childhood acute monocytic leukemia,Male,1Y,Cancer,Homo sapiens
 CVCL_0030,HeLa,Uterus; cervix,,Human papillomavirus-related endocervical adenocarcinoma,Female,30Y6M,Cancer,Homo sapiens
