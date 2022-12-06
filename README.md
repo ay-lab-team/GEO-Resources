@@ -19,7 +19,6 @@ To get cellosaursu meta data for your favorite cell lines please:
 6. Example output. This is what celltype.csv can look like:
 <img src="output.png"
      style="float: left; margin-right: 10px;" />
-The header columns are AC (accession ID), CC (comments on where the sample is derived), DT (disease), SX (sex of cell), AG (age of donor at sampling), and CA (category). 
      1\) Cellosaurus ID column has various values.
 
      2\) Cell Line Name column has various values.
@@ -28,15 +27,15 @@ The header columns are AC (accession ID), CC (comments on where the sample is de
      
      4\) Cell Type column has various values and most are empty. Only some cell lines' metadata have cell type, like "Back; skin; epidermis. Cell type=Keratinocyte." 
      
-     3\) Disease column has disease name from [NCI Thesaurus](https://www.ebi.ac.uk/ols/ontologies/ncit). If the cell line is non-cancerous, then the value is empty.
+     5\) Disease column has disease name from [NCI Thesaurus](https://www.ebi.ac.uk/ols/ontologies/ncit). If the cell line is non-cancerous, then the value is empty.
 
-     4\) Sex column has either "Male", "Female", or "Sex unspecified" value.
+     6\) Sex column has either "Male", "Female", or "Sex unspecified" value.
 
-     5\) Age column has various values.
+     7\) Age column has various values.
 
-     6\) Category column has various values, including "Cancer cell line" and non-cancerous categories like "Transformed cell line".
+     8\) Category column has various values, including "Cancer cell line" and non-cancerous categories like "Transformed cell line".
 
-     7\) Species column has various values. This example has all human cell lines, so the column only has "Homo sapiens" value.
+     9\) Species column has various values. This example has all human cell lines, so the column only has "Homo sapiens" value.
 
 
 ## Visuals
