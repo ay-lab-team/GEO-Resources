@@ -20,17 +20,23 @@ To get cellosaursu meta data for your favorite cell lines please:
 <img src="output.png"
      style="float: left; margin-right: 10px;" />
 The header columns are AC (accession ID), CC (comments on where the sample is derived), DT (disease), SX (sex of cell), AG (age of donor at sampling), and CA (category). 
-     1\) AC column have various values.
+     1\) Cellosaurus ID column has various values.
 
-     2\) CC column can have general sampling site and specific site separated by a semicolon, like "Uterus; cervix." Some cell lines' metadata even have cell type, like "Back; skin; epidermis. Cell type=Keratinocyte." However, there're some cell lines' metadata that doesn't have sampling site information, regardless of category.
+     2\) Cell Line Name column has various values.
+
+     3\) Organ and/or Tissue column can have general sampling site and specific site separated by a semicolon, like "Uterus; cervix." However, there're some cell lines' metadata that doesn't have sampling site information, regardless of category.
      
-     3\) DT column have disease name from [NCI Thesaurus](https://www.ebi.ac.uk/ols/ontologies/ncit). If the cell line is non-cancerous, then the value is empty.
+     4\) Cell Type column has various values and most are empty. Only some cell lines' metadata have cell type, like "Back; skin; epidermis. Cell type=Keratinocyte." 
+     
+     3\) Disease column has disease name from [NCI Thesaurus](https://www.ebi.ac.uk/ols/ontologies/ncit). If the cell line is non-cancerous, then the value is empty.
 
-     4\) SX column have either "Male", "Female", or "Sex unspecified" value.
+     4\) Sex column has either "Male", "Female", or "Sex unspecified" value.
 
-     5\) AG column have various values.
+     5\) Age column has various values.
 
-     6\) CA column have various values, including "Cancer cell line" and non-cancerous categories like "Transformed cell line".
+     6\) Category column has various values, including "Cancer cell line" and non-cancerous categories like "Transformed cell line".
+
+     7\) Species column has various values. This example has all human cell lines, so the column only has "Homo sapiens" value.
 
 
 ## Visuals
