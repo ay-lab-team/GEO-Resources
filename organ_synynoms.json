@@ -1,0 +1,31 @@
+{
+    "organ": {
+      "blood": ["vessel", "Leukemia"],
+      "blodily fluid": [],
+      "epithelium": [ "skin",  "epi"],
+      "brain": ["brain"],
+      "endocrine gland": [ "thyroid gland"],
+      "exocrine gland": [ "lymph node"],
+      "liver": ["liver"],
+      "heart": ["heart", "cardi"],
+      "embryo": ["embryo"],
+      "connective tissue": [],
+      "musculature of body": ["muscul"],
+      "lung": ["lung"],
+      "intestine": ["indestin"],
+      "kidney": ["kidney"],
+      "bone marrow": ["bone", "marrow"],
+      "colon": ["colo"],
+      "spleen": ["spleen"],
+      "stomach": ["stomach"],
+      "placenta": ["placenta"],
+      "pancreas": ["pancrea"],
+      "bladder": ["bladder"],
+      "reproductive organs": ["umbilical", "uterus", "penis", "ovar", "test"]
+    },
+
+    "biomaterial": {
+      "primary": ["primary", "primi"],
+      "cell line": ["cellline", "cell line"]
+    }
+}
