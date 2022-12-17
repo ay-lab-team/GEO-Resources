@@ -1,33 +1,126 @@
 {
   "organ": {
-    "blood": ["vessel", "leukemia", "blood", "lymphoma", "ramos b"],
+    "blood": [
+      "vessel",
+      "leukemia",
+      "blood",
+      "ramos b",
+      "haematopoietic"
+    ],
+    "bone marrow": [
+      "bone",
+      "marrow",
+      "ewing sarcoma",
+      "b-all",
+      "t-all",
+      "myeloma",
+      "plb"
+    ],
     "blodily fluid": [],
-    "epithelium": ["skin", "epi", "squamous", "breast", "melanoma","erythematosus","sle", "mda-mb-231"],
-    "brain": ["brain"],
-    "endocrine gland": ["thyroid gland", "thymus"],
-    "exocrine gland": ["lymph node"],
-    "liver": ["liver", "hcc"],
-    "heart": ["heart", "cardi"],
-    "embryo": ["embryo"],
+    "epithelium": [
+      "skin",
+      "epi",
+      "squamous",
+      "breast",
+      "melanoma",
+      "erythematosus",
+      "sle",
+      "mda-mb-231",
+      "keratinocyte",
+      "melanocyte"
+    ],
+    "brain": [
+      "caudate"
+    ],
+    "endocrine gland": [
+      "thyroid gland",
+      "thymus",
+      "thymic",
+      "treg",
+      "t-reg",
+      "thyroid"
+    ],
+    "exocrine gland": [
+      "lymph node",
+      "lymphoma",
+      "tonsil"
+    ],
+    "liver": [
+      "liver",
+      "hcc"
+    ],
+    "heart": [
+      "heart",
+      "cardi"
+    ],
+    "embryo": [
+      "embryo"
+    ],
     "connective tissue": [],
-    "musculature of body": ["muscul", "rhabdomyosarcoma", "rd", "rms"],
-    "lung": ["lung"],
-    "esophagus": ["esophagus"],
-    "intestine": ["indestin"],
-    "kidney": ["kidney"],
-    "bone marrow": [ "bone", "marrow", "ewing sarcoma"],
-    "colon": ["colo"],
-    "spleen": ["spleen"],
-    "stomach": ["stomach"],
-    "placenta": ["placenta"],
-    "pancreas": ["pancrea"],
-    "bladder": ["bladder"],
-    "reproductive organs": [ "umbilical", "uterus", "penis", "ovar", "test", "endometrial"],
-    "nerve": [ "neuroblastoma", "nerve"],
-    "prostate": ["prostate"]
+    "musculature of body": [
+      "muscula",
+      "rhabdomyosarcoma",
+      "rms"
+    ],
+    "lung": [
+      "lung"
+    ],
+    "esophagus": [
+      "esophagus",
+      "esophageal"
+    ],
+    "intestine": [
+      "indestin"
+    ],
+    "kidney": [
+      "kidney",
+      "podocyte"
+    ],
+    "colon": [
+      "colon",
+      "colorectal"
+    ],
+    "spleen": [
+      "spleen"
+    ],
+    "stomach": [
+      "stomach"
+    ],
+    "placenta": [
+      "placenta"
+    ],
+    "pancreas": [
+      "pancrea"
+    ],
+    "bladder": [
+      "bladder"
+    ],
+    "reproductive organs": [
+      "umbilical",
+      "uterus",
+      "penis",
+      "ovar",
+      "test",
+      "endometrial",
+      "hela"
+    ],
+    "nerve": [
+      "neuroblastoma",
+      "nerve",
+      "gist"
+    ],
+    "prostate": [
+      "prostate"
+    ]
   },
   "biomaterial": {
-    "primary": [ "primary", "primi"],
-    "cell line": ["cellline", "cell line"]
-  },
+    "primary": [
+      "primary",
+      "primi"
+    ],
+    "cell line": [
+      "cellline",
+      "cell line"
+    ]
+  }
 }
