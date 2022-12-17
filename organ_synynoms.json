@@ -1,31 +1,33 @@
 {
-    "organ": {
-      "blood": ["vessel", "Leukemia"],
-      "blodily fluid": [],
-      "epithelium": [ "skin",  "epi"],
-      "brain": ["brain"],
-      "endocrine gland": [ "thyroid gland"],
-      "exocrine gland": [ "lymph node"],
-      "liver": ["liver"],
-      "heart": ["heart", "cardi"],
-      "embryo": ["embryo"],
-      "connective tissue": [],
-      "musculature of body": ["muscul"],
-      "lung": ["lung"],
-      "intestine": ["indestin"],
-      "kidney": ["kidney"],
-      "bone marrow": ["bone", "marrow"],
-      "colon": ["colo"],
-      "spleen": ["spleen"],
-      "stomach": ["stomach"],
-      "placenta": ["placenta"],
-      "pancreas": ["pancrea"],
-      "bladder": ["bladder"],
-      "reproductive organs": ["umbilical", "uterus", "penis", "ovar", "test"]
-    },
-
-    "biomaterial": {
-      "primary": ["primary", "primi"],
-      "cell line": ["cellline", "cell line"]
-    }
+  "organ": {
+    "blood": ["vessel", "leukemia", "blood", "lymphoma", "ramos b"],
+    "blodily fluid": [],
+    "epithelium": ["skin", "epi", "squamous", "breast", "melanoma","erythematosus","sle", "mda-mb-231"],
+    "brain": ["brain"],
+    "endocrine gland": ["thyroid gland", "thymus"],
+    "exocrine gland": ["lymph node"],
+    "liver": ["liver", "hcc"],
+    "heart": ["heart", "cardi"],
+    "embryo": ["embryo"],
+    "connective tissue": [],
+    "musculature of body": ["muscul", "rhabdomyosarcoma", "rd", "rms"],
+    "lung": ["lung"],
+    "esophagus": ["esophagus"],
+    "intestine": ["indestin"],
+    "kidney": ["kidney"],
+    "bone marrow": [ "bone", "marrow", "ewing sarcoma"],
+    "colon": ["colo"],
+    "spleen": ["spleen"],
+    "stomach": ["stomach"],
+    "placenta": ["placenta"],
+    "pancreas": ["pancrea"],
+    "bladder": ["bladder"],
+    "reproductive organs": [ "umbilical", "uterus", "penis", "ovar", "test", "endometrial"],
+    "nerve": [ "neuroblastoma", "nerve"],
+    "prostate": ["prostate"]
+  },
+  "biomaterial": {
+    "primary": [ "primary", "primi"],
+    "cell line": ["cellline", "cell line"]
+  },
 }
