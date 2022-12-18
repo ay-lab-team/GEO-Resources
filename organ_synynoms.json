@@ -1,126 +1,34 @@
 {
-  "organ": {
-    "blood": [
-      "vessel",
-      "leukemia",
-      "blood",
-      "ramos b",
-      "haematopoietic"
-    ],
-    "bone marrow": [
-      "bone",
-      "marrow",
-      "ewing sarcoma",
-      "b-all",
-      "t-all",
-      "myeloma",
-      "plb"
-    ],
-    "blodily fluid": [],
-    "epithelium": [
-      "skin",
-      "epi",
-      "squamous",
-      "breast",
-      "melanoma",
-      "erythematosus",
-      "sle",
-      "mda-mb-231",
-      "keratinocyte",
-      "melanocyte"
-    ],
-    "brain": [
-      "caudate"
-    ],
-    "endocrine gland": [
-      "thyroid gland",
-      "thymus",
-      "thymic",
-      "treg",
-      "t-reg",
-      "thyroid"
-    ],
-    "exocrine gland": [
-      "lymph node",
-      "lymphoma",
-      "tonsil"
-    ],
-    "liver": [
-      "liver",
-      "hcc"
-    ],
-    "heart": [
-      "heart",
-      "cardi"
-    ],
-    "embryo": [
-      "embryo"
-    ],
-    "connective tissue": [],
-    "musculature of body": [
-      "muscula",
-      "rhabdomyosarcoma",
-      "rms"
-    ],
-    "lung": [
-      "lung"
-    ],
-    "esophagus": [
-      "esophagus",
-      "esophageal"
-    ],
-    "intestine": [
-      "indestin"
-    ],
-    "kidney": [
-      "kidney",
-      "podocyte"
-    ],
-    "colon": [
-      "colon",
-      "colorectal"
-    ],
-    "spleen": [
-      "spleen"
-    ],
-    "stomach": [
-      "stomach"
-    ],
-    "placenta": [
-      "placenta"
-    ],
-    "pancreas": [
-      "pancrea"
-    ],
-    "bladder": [
-      "bladder"
-    ],
-    "reproductive organs": [
-      "umbilical",
-      "uterus",
-      "penis",
-      "ovar",
-      "test",
-      "endometrial",
-      "hela"
-    ],
-    "nerve": [
-      "neuroblastoma",
-      "nerve",
-      "gist"
-    ],
-    "prostate": [
-      "prostate"
-    ]
-  },
-  "biomaterial": {
-    "primary": [
-      "primary",
-      "primi"
-    ],
-    "cell line": [
-      "cellline",
-      "cell line"
-    ]
-  }
-}
+    "biomaterial": {
+        "cell line": ["cellline", "cell line"],
+        "primary": ["primary", "primi"]
+    },
+    "organ": {
+        "bone marrow": ["bone", "marrow", "ewing sarcoma", "t-all", "cutll1", "myeloma", "plb", "tc71", "\">rh30", "pre-b"],
+        "blood": ["vessel", "leukemia", "blood", "ramos b", "haematopoietic", "b-all", "\">sem", "jurkat"],
+        "blodily fluid": ["cutll1", "pleural", "effusion"],
+        "epithelium": ["skin", "epi", "squamous", "breast", "melanoma", "erythematosus", "sle", "mda-mb-231", "keratinocyte", "melanocyte", "nasopharyngeal"],
+        "endocrine gland": ["thyroid gland", "thymus", "thymic", "treg", "t-reg", "thyroid", "\">rh3\""],
+        "exocrine gland": ["lymph node", "lymphoma", "tonsil"],
+        "liver": ["liver", "hcc"],
+        "heart": ["heart", "cardi"],
+        "embryo": ["embryo"],
+        "connective tissue": ["soft tissue"],
+        "musculature of body": ["muscula", "rhabdomyosarcoma", "\">sms", "a673"],
+        "lung": ["lung", "\">rh4"],
+        "esophagus": ["esophagus", "esophageal"],
+        "intestine": ["indestin"],
+        "kidney": ["kidney", "podocyte"],
+        "colon": ["colon", "colorectal"],
+        "spleen": ["spleen"],
+        "stomach": ["stomach"],
+        "placenta": ["placenta"],
+        "pancreas": ["pancrea"],
+        "bladder": ["bladder"],
+        "reproductive organs": ["umbilical", "uterus", "penis", "ovar", "test", "endometrial", "hela"],
+        "nerve": ["neuroblastoma", "nerve", "gist", "spinal cord tissue"],
+        "brain": ["brain", "caudate", "chla-10"],
+        "prostate": ["prostate"]
+        
+    }
+    }
