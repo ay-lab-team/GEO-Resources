@@ -1,38 +1,326 @@
 {
-    "organ": {
-        "skeletal system": ["bone", "marrow", "ewing sarcoma", "t-all", "myeloma", "plb", "tc71", "\">rh30", "pre-b"],
-        "blood": ["vessel", "leukemia", "blood", "ramos b", "haematopoietic", "b-all", "\">sem", "jurkat", "cutll1", "pleural", "effusion"],
-        "skin": ["skin", "epi", "squamous", "breast", "melanoma", "erythematosus", "sle", "keratinocyte", "melanocyte", "nasopharyngeal"],
-        "mammary gland": ["mammar", "breast", "mda-mb-231"],
-        "thyroid": ["thyroid gland", "thyroid"],
-        "thymus": ["thymus", "thymic", "treg", "t-reg"],
-        "lymph node": ["lymph node", "lymphoma", "\">rh3\""],
-        "tonsil": ["tonsil"],
-        "liver": ["liver", "hcc"],
-        "heart": ["heart", "cardi"],
-        "embryo": ["embryo"],
-        "connective tissue": ["soft tissue"],
-        "musculature of body": ["muscula", "rhabdomyosarcoma", "\">sms", "a673"],
-        "lung": ["lung", "\">rh4"],
-        "esophagus": ["esophagus", "esophageal"],
-        "intestine": ["indestin"],
-        "kidney": ["kidney", "podocyte"],
-        "colon": ["colon", "colorectal"],
-        "spleen": ["spleen"],
-        "stomach": ["stomach"],
-        "placenta": ["placenta"],
-        "pancreas": ["pancrea"],
-        "bladder": ["bladder"],
-        "uturus": ["umbilical", "uterus", "endometrial", "cervic", "hela"],
-        "penis": ["penis"],
-        "testis": ["test"],
-        "ovary": ["ovar"],
-        "nerve": ["neuroblastoma", "nerve", "gist", "spinal cord tissue"],
-        "brain": ["brain", "caudate", "chla-10"],
-        "prostate": ["prostate"]
-    },
-    "biomaterial": {
-        "cell line": ["cellline", "cell line"],
-        "primary": ["primary", "primi"]
-    }
+   "biomaterial":{
+      "cell line":[
+         "cellline",
+         "cell line",
+         "soxgfp",
+         "cell line established from",
+         "hESC"
+      ],
+      "primary":[
+         "primary",
+         "primi",
+         "attribute_name=\"patient\""
+      ]
+   },
+   "disease":{
+      "HCC":[
+         ">hcc<"
+      ],
+      "GIST":[
+         "gist"
+      ],
+      "Colorectal Adenocarcinoma":[
+         "cw2",
+         ">rko",
+         "sw403",
+         "sw480",
+         "sw620",
+         "sw837",
+         "sw948",
+         "dld1",
+         "hct15",
+         "snu-c5",
+         "hcc116",
+         "ls174t",
+         "colon cancer",
+         "colorectal cancer",
+         "coloO320-dm"
+      ],
+      "Leukemia":[
+         "leukemia"
+      ],
+      "Acute myeloid leukemia":[
+         "mll-af9"
+      ],
+      "Acute monocytic leukemia":[
+         "thp-1"
+      ],
+      "Acute lymphoblastic leukaemia":[
+         ">sem"
+      ],
+      "Mantle cell lymphoma":[
+         "mantle cell lymphoma"
+      ],
+      "ALL":[
+         ">all<"
+      ],
+      "Burkitt's lymphoma":[
+         "ramos b"
+      ],
+      "Non-Hodgkin lymphoma":[
+         "oci-ly7",
+         "sudh4"
+      ],
+      "Prostate carcinoma":[
+         "prostate cancer",
+         "lncap",
+         "vcap"
+      ],
+      "Normal":[
+         ">fhc"
+      ],
+      "Gastrointestinal stromal tumour":[
+         "gist"
+      ],
+      "Mycosis fungoides":[
+         "my-la",
+         "myla"
+      ],
+      "Breast cancer":[
+         "breast cancer",
+         "t47d"
+      ],
+      "Invasive Breast Carcinoma":[
+         "hcc1599"
+      ],
+      "Triple-negative breast cancer":[
+         "triple-negative breast cancer"
+      ],
+      "ER-positive, PR-positive, HER2-negative breast cancer":[
+         "mcf7"
+      ],
+      "ER-positive breast cancer":[
+         "mda_mb134vi"
+      ],
+      "ER-positive, PR-negative and ERBB2-negative breast cancer":[
+         "sum44pe"
+      ],
+      "Esophageal squamous cancer":[
+         "esophageal squamous cancer"
+      ],
+      "Non-Small Cell Lung Cancer":[
+         ">hcc15<"
+      ],
+      "Lung squamous cancer":[
+         "lung squamous cancer"
+      ],
+      "Small cell lung cancer":[
+         "small cell lung cancer"
+      ],
+      "Head and neck squamous cancer":[
+         "head and neck squamous cancer"
+      ],
+      "Human endometrial adenocarcinoma":[
+         "human endometrial adenocarcinoma"
+      ],
+      "Ewing sarcoma":[
+         "ewing sarcoma"
+      ],
+      "Multiple myeloma":[
+         "multiple myeloma"
+      ],
+      "Neuroblastoma":[
+         "neuroblastoma",
+         "tr-14",
+         "tr14"
+      ],
+      "Gastric carcinoma":[
+         "snu16",
+         "snu-16"
+      ],
+      "Rhabdoid tumor":[
+         "g401"
+      ],
+      "Alveolar rhabdomyosarcoma":[
+         ">rh4<",
+         ">rh3<",
+         ">rh30<"
+      ],
+      "Embryonal rhabdomyosarcoma":[
+         ">sms"
+      ]
+   },
+   "organ":{
+      "embryo":[
+         "embryo",
+         "mesc",
+         "hesc",
+         "\">e14",
+         "\">esc"
+      ],
+      "skeletal system":[
+         "bone",
+         "marrow",
+         "ewing sarcoma",
+         "t-all",
+         "myeloma",
+         "plb",
+         "tc71",
+         "\">rh30",
+         "pre-b"
+      ],
+      "blood":[
+         "vessel",
+         "leukemia",
+         "blood",
+         "ramos b",
+         "haematopoietic",
+         "b-all",
+         "\">sem",
+         "jurkat",
+         "cutll1",
+         "gm12878",
+         "oci-ly7",
+         "thp-1",
+         "hudep1",
+         "hudep-1",
+         "hudep2",
+         "hudep-2",
+         "hudep3",
+         "hudep-3"
+      ],
+      "bodily fluid":[
+         "pleural",
+         "effusion",
+         "sudh4"
+      ],
+      "skin":[
+         "skin",
+         "epi",
+         "squamous",
+         "breast",
+         "melanoma",
+         "erythematosus",
+         "sle",
+         "keratinocyte",
+         "melanocyte",
+         "nasopharyngeal"
+      ],
+      "mammary gland":[
+         "mammar",
+         "breast",
+         "mda-mb-231"
+      ],
+      "thyroid":[
+         "thyroid gland",
+         "thyroid"
+      ],
+      "thymus":[
+         "thymus",
+         "thymic",
+         "treg",
+         "t-reg",
+         "my-la",
+         "myla"
+      ],
+      "lymph node":[
+         "lymph node",
+         "lymphoma",
+         "\">rh3\""
+      ],
+      "tonsil":[
+         "tonsil"
+      ],
+      "liver":[
+         "liver",
+         "hcc"
+      ],
+      "musculature of body":[
+         "muscula",
+         "soft",
+         "connective",
+         "rhabdomyosarcoma",
+         "angiomatoid fibrous histiocytoma",
+         "\">sms",
+         "a673"
+      ],
+      "lung":[
+         "lung",
+         "\">rh4"
+      ],
+      "esophagus":[
+         "esophagus",
+         "esophageal"
+      ],
+      "intestine":[
+         "indestin",
+         "fhc",
+         "sw480"
+      ],
+      "kidney":[
+         "kidney",
+         "podocyte",
+         "g401"
+      ],
+      "colon":[
+         "colon",
+         "colorectal",
+         "hct116",
+         "ls174t",
+         ">rko",
+         "coloO320-dm"
+      ],
+      "spleen":[
+         "spleen"
+      ],
+      "stomach":[
+         "stomach",
+         "gist",
+         "snu16",
+         "snu-16"
+      ],
+      "eye":[
+         "retina"
+      ],
+      "placenta":[
+         "placenta"
+      ],
+      "pancreas":[
+         "pancrea"
+      ],
+      "bladder":[
+         "bladder"
+      ],
+      "uturus":[
+         "umbilical",
+         "uterus",
+         "endometrial",
+         "cervic",
+         "hela"
+      ],
+      "penis":[
+         "penis"
+      ],
+      "testis":[
+         "test"
+      ],
+      "ovary":[
+         "ovar"
+      ],
+      "nerve":[
+         "neuroblastoma",
+         "nerve",
+         "spinal",
+         "cortex",
+         "\">npc",
+         "tr-14",
+         "tr14"
+      ],
+      "brain":[
+         "brain",
+         "caudate",
+         "chla-10"
+      ],
+      "prostate":[
+         "prostate"
+      ],
+      "heart":[
+         "heart",
+         "cardi",
+         "ventricle",
+         "atrium",
+         "aortic"
+      ]
+   }
 }
