@@ -9,7 +9,7 @@ To get cellosaursu meta data for your favorite cell lines please:
 1. Go to [HiChIP Tracker Google Sheet](https://docs.google.com/spreadsheets/d/1myw--D1_jMa3UFEUPyLy5C3MnbfcJzLIIJEoCS_3X4k/edit#gid=1154000703)
 2. Click the "Human Cell Types" tab
 3. Select "Related Cellosaurus ID" column and copy the content to a file named "accessions.txt"
-<img src="sheet_column.png"
+<img src="img/hichip_tracker.png"
      style="float: left; margin-right: 10px;" />
 4. You don't have to remove the empty rows in accessions.txt, but if you wish, you can run `sed -i '/^$/d' accessions.txt`
 5. Go to `cell-type-resources` directory and run `bash parsing_cellosaurus_samples.sh`
@@ -17,7 +17,7 @@ To get cellosaursu meta data for your favorite cell lines please:
     The code will download Cellosaurus sample metadata files that match the CVCL_xxxx accession IDs you provided, filter the sample metadata for only necessary rows, transpose these rows to a table, then concate it with other samples. Lastly, this table will be sorted.
 
 6. Example output. This is what celltype.csv can look like:
-<img src="output.png"
+<img src="img/cellosaurus_output.png"
      style="float: left; margin-right: 10px;" />
      1\) Cellosaurus ID column has various values.
 
