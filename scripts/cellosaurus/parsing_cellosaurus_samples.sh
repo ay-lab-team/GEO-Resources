@@ -1,3 +1,9 @@
+
+# Adding command line arguments
+input_fn=$1
+output_fn=$2
+temp_dir=$3
+
 # prepare dir to hold data
 mkdir -p raw_cellosaurus; mkdir -p filtered_cellosaurus
 
@@ -8,7 +14,7 @@ do
 	then
 		wget -P raw_cellosaurus https://www.cellosaurus.org/${AC}.txt
 	fi
-done < accessions.txt
+done < $input_fn
 
 # filter for meta data from each file
 for f in raw_cellosaurus/*
