@@ -7,20 +7,16 @@
          "cell line established from",
          "hESC"
       ],
-      "primary":[
+      "primary": [
          "primary",
          "primi",
          "attribute_name=\"patient\""
       ]
    },
-   "disease":{
-      "HCC":[
-         ">hcc<"
-      ],
-      "GIST":[
-         "gist"
-      ],
-      "Colorectal Adenocarcinoma":[
+   "disease": {
+      "HCC": [">hcc<"],
+      "GIST": ["gist"],
+      "Colorectal Adenocarcinoma": [
          "cw2",
          ">rko",
          "sw403",
@@ -37,27 +33,13 @@
          "colorectal cancer",
          "coloO320-dm"
       ],
-      "Leukemia":[
-         "leukemia"
-      ],
-      "Acute myeloid leukemia":[
-         "mll-af9"
-      ],
-      "Acute monocytic leukemia":[
-         "thp-1"
-      ],
-      "Acute lymphoblastic leukaemia":[
-         ">sem"
-      ],
-      "Mantle cell lymphoma":[
-         "mantle cell lymphoma"
-      ],
-      "ALL":[
-         ">all<"
-      ],
-      "Burkitt's lymphoma":[
-         "ramos b"
-      ],
+      "Leukemia": ["leukemia"],
+      "Acute myeloid leukemia": ["mll-af9"],
+      "Acute monocytic leukemia": ["thp-1"],
+      "Acute lymphoblastic leukaemia": [">sem"],
+      "Mantle cell lymphoma": ["mantle cell lymphoma"],
+      "ALL": [">all<"],
+      "Burkitt's lymphoma": ["ramos b"],
       "Non-Hodgkin lymphoma":[
          "oci-ly7",
          "sudh4"
@@ -67,59 +49,26 @@
          "lncap",
          "vcap"
       ],
-      "Normal":[
-         ">fhc"
-      ],
-      "Gastrointestinal stromal tumour":[
-         "gist"
-      ],
-      "Mycosis fungoides":[
+      "Normal": [">fhc"],
+      "Gastrointestinal stromal tumour": ["gist"],
+      "Mycosis fungoides": [
          "my-la",
          "myla"
       ],
-      "Breast cancer":[
-         "breast cancer",
-         "t47d"
-      ],
-      "Invasive Breast Carcinoma":[
-         "hcc1599"
-      ],
-      "Triple-negative breast cancer":[
-         "triple-negative breast cancer"
-      ],
-      "ER-positive, PR-positive, HER2-negative breast cancer":[
-         "mcf7"
-      ],
-      "ER-positive breast cancer":[
-         "mda_mb134vi"
-      ],
-      "ER-positive, PR-negative and ERBB2-negative breast cancer":[
-         "sum44pe"
-      ],
-      "Esophageal squamous cancer":[
-         "esophageal squamous cancer"
-      ],
-      "Non-Small Cell Lung Cancer":[
-         ">hcc15<"
-      ],
-      "Lung squamous cancer":[
-         "lung squamous cancer"
-      ],
-      "Small cell lung cancer":[
-         "small cell lung cancer"
-      ],
-      "Head and neck squamous cancer":[
-         "head and neck squamous cancer"
-      ],
-      "Human endometrial adenocarcinoma":[
-         "human endometrial adenocarcinoma"
-      ],
-      "Ewing sarcoma":[
-         "ewing sarcoma"
-      ],
-      "Multiple myeloma":[
-         "multiple myeloma"
-      ],
+      "Breast cancer": ["breast cancer", "t47d"],
+      "Invasive Breast Carcinoma": ["hcc1599"],
+      "Triple-negative breast cancer": ["triple-negative breast cancer"],
+      "ER-positive, PR-positive, HER2-negative breast cancer": ["mcf7"],
+      "ER-positive breast cancer": ["mda_mb134vi"],
+      "ER-positive, PR-negative and ERBB2-negative breast cancer": ["sum44pe"],
+      "Esophageal squamous cancer": ["esophageal squamous cancer"],
+      "Non-Small Cell Lung Cancer": [">hcc15<"],
+      "Lung squamous cancer": ["lung squamous cancer"],
+      "Small cell lung cancer": ["small cell lung cancer"],
+      "Head and neck squamous cancer": ["head and neck squamous cancer"],
+      "Human endometrial adenocarcinoma": ["human endometrial adenocarcinoma"],
+      "Ewing sarcoma": ["ewing sarcoma"],
+      "Multiple myeloma": ["multiple myeloma"],
       "Neuroblastoma":[
          "neuroblastoma",
          "tr-14",
