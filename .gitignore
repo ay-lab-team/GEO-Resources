@@ -11,3 +11,5 @@ cellosaurus.txt
 cellosaurus_filtered.txt
 scripts/geo_queries/esummary_biosample.dtd
 results/cellosaurus/cellosaurus_info.tsv
+results/
+*.un~
