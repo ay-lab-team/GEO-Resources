@@ -2,15 +2,11 @@
    "biomaterial":{
       "cell line":[
          "cellline",
-         "cell line",
-         "soxgfp",
-         "cell line established from",
-         "hESC"
+         "cell line"
       ],
       "primary": [
-         "primary",
-         "primi",
-         "attribute_name=\"patient\""
+         "attribute_name=\"patient\"",
+         "patient"
       ]
    },
    "disease": {
@@ -33,12 +29,13 @@
          "colorectal cancer",
          "coloO320-dm"
       ],
-      "Leukemia": ["leukemia"],
-      "Acute myeloid leukemia": ["mll-af9"],
-      "Acute monocytic leukemia": ["thp-1"],
-      "Acute lymphoblastic leukaemia": [">sem"],
+      "Leukemia": ["leukemia",
+                   "mll-af9",
+                   "thp-1",
+                   ">sem",
+                   ">all<"
+                  ],
       "Mantle cell lymphoma": ["mantle cell lymphoma"],
-      "ALL": [">all<"],
       "Burkitt's lymphoma": ["ramos b"],
       "Non-Hodgkin lymphoma":[
          "oci-ly7",
@@ -55,17 +52,11 @@
          "my-la",
          "myla"
       ],
-      "Breast cancer": ["breast cancer", "t47d"],
-      "Invasive Breast Carcinoma": ["hcc1599"],
-      "Triple-negative breast cancer": ["triple-negative breast cancer"],
-      "ER-positive, PR-positive, HER2-negative breast cancer": ["mcf7"],
-      "ER-positive breast cancer": ["mda_mb134vi"],
-      "ER-positive, PR-negative and ERBB2-negative breast cancer": ["sum44pe"],
-      "Esophageal squamous cancer": ["esophageal squamous cancer"],
-      "Non-Small Cell Lung Cancer": [">hcc15<"],
-      "Lung squamous cancer": ["lung squamous cancer"],
-      "Small cell lung cancer": ["small cell lung cancer"],
+      "Breast cancer": ["breast cancer", "t47d", "mcf7", "mda_mb134vi",
+                        "hcc1599", "triple-negative breast cancer", "sum44pe"],
+      "Lung Cancer": [">hcc15<", "lung squamous cancer", "small cell lung cancer"],
       "Head and neck squamous cancer": ["head and neck squamous cancer"],
+      "Esophageal squamous cancer": ["esophageal squamous cancer"],
       "Human endometrial adenocarcinoma": ["human endometrial adenocarcinoma"],
       "Ewing sarcoma": ["ewing sarcoma"],
       "Multiple myeloma": ["multiple myeloma"],
@@ -91,178 +82,43 @@
       ]
    },
    "organ":{
-      "embryo":[
-         "embryo",
-         "mesc",
-         "hesc",
-         "\">e14",
-         "\">esc"
-      ],
-      "skeletal system":[
-         "bone",
-         "marrow",
-         "ewing sarcoma",
-         "t-all",
-         "myeloma",
-         "plb",
-         "tc71",
-         "\">rh30",
-         "pre-b"
+      "bladder":[
+         "bladder"
       ],
       "blood":[
          "vessel",
          "leukemia",
          "blood",
-         "ramos b",
-         "haematopoietic",
-         "b-all",
-         "\">sem",
-         "jurkat",
-         "cutll1",
-         "gm12878",
-         "oci-ly7",
-         "thp-1",
-         "hudep1",
-         "hudep-1",
-         "hudep2",
-         "hudep-2",
-         "hudep3",
-         "hudep-3"
+         "haematopoietic"
       ],
       "bodily fluid":[
          "pleural",
-         "effusion",
-         "sudh4"
+         "effusion"
       ],
-      "skin":[
-         "skin",
-         "epi",
-         "squamous",
-         "breast",
-         "melanoma",
-         "erythematosus",
-         "sle",
-         "keratinocyte",
-         "melanocyte",
-         "nasopharyngeal"
+      "brain":[
+         "brain",
+         "caudate"
       ],
-      "mammary gland":[
-         "mammar",
-         "breast",
-         "mda-mb-231"
+      "colon":[
+         "colon",
+         "colorectal"
       ],
-      "thyroid":[
-         "thyroid gland",
-         "thyroid"
-      ],
-      "thymus":[
-         "thymus",
-         "thymic",
-         "treg",
-         "t-reg",
-         "my-la",
-         "myla"
-      ],
-      "lymph node":[
-         "lymph node",
-         "lymphoma",
-         "\">rh3\""
-      ],
-      "tonsil":[
-         "tonsil"
-      ],
-      "liver":[
-         "liver",
-         "hcc"
-      ],
-      "musculature of body":[
-         "muscula",
-         "soft",
-         "connective",
-         "rhabdomyosarcoma",
-         "angiomatoid fibrous histiocytoma",
-         "\">sms",
-         "a673"
-      ],
-      "lung":[
-         "lung",
-         "\">rh4"
+      "embryo":[
+         "embryo",
+         "mesc",
+         "hesc",
+         "umbilical"
       ],
       "esophagus":[
          "esophagus",
          "esophageal"
       ],
-      "intestine":[
-         "indestin",
-         "fhc",
-         "sw480"
-      ],
-      "kidney":[
-         "kidney",
-         "podocyte",
-         "g401"
-      ],
-      "colon":[
-         "colon",
-         "colorectal",
-         "hct116",
-         "ls174t",
-         ">rko",
-         "coloO320-dm"
-      ],
-      "spleen":[
-         "spleen"
-      ],
-      "stomach":[
-         "stomach",
-         "gist",
-         "snu16",
-         "snu-16"
+      "exocrine gland": [
+         "exocrine"
       ],
       "eye":[
+         "eye",
          "retina"
-      ],
-      "placenta":[
-         "placenta"
-      ],
-      "pancreas":[
-         "pancrea"
-      ],
-      "bladder":[
-         "bladder"
-      ],
-      "uturus":[
-         "umbilical",
-         "uterus",
-         "endometrial",
-         "cervic",
-         "hela"
-      ],
-      "penis":[
-         "penis"
-      ],
-      "testis":[
-         "test"
-      ],
-      "ovary":[
-         "ovar"
-      ],
-      "nerve":[
-         "neuroblastoma",
-         "nerve",
-         "spinal",
-         "cortex",
-         "\">npc",
-         "tr-14",
-         "tr14"
-      ],
-      "brain":[
-         "brain",
-         "caudate",
-         "chla-10"
-      ],
-      "prostate":[
-         "prostate"
       ],
       "heart":[
          "heart",
@@ -270,6 +126,95 @@
          "ventricle",
          "atrium",
          "aortic"
+      ],
+      "intestine":[
+         "intestine",
+         "fhc"
+      ],
+      "kidney":[
+         "kidney",
+         "podocyte"
+      ],
+      "liver":[
+         "liver"
+      ],
+      "lymph node":[
+         "lymph node",
+         "lymphoma"
+      ],
+      "lung":[
+         "lung"
+      ],
+      "mammary gland":[
+         "mammary",
+         "breast"
+      ],
+      "musculature of body":[
+         "muscula",
+         "connective",
+         "rhabdomyosarcoma",
+         "angiomatoid fibrous histiocytoma"
+      ],
+      "nerve":[
+         "neuroblastoma",
+         "nerve",
+         "spinal",
+         "cortex"
+      ],
+      "ovary":[
+         "ovary",
+         "ovarian"
+      ],
+      "pancreas":[
+         "pancreas",
+         "pancreatic"
+      ],
+      "penis":[
+         "penis"
+      ],
+      "placenta":[
+         "placenta"
+      ],
+      "prostate":[
+         "prostate"
+      ],
+      "skeletal system":[
+         "bone",
+         "marrow",
+         "ewing sarcoma",
+         "myeloma"
+      ],
+      "skin":[
+         "skin",
+         "melanoma",
+         "erythematosus",
+         "keratinocyte",
+         "melanocyte"
+      ],
+      "spleen":[
+         "spleen"
+      ],
+      "stomach":[
+         "stomach",
+         "gist"
+      ],
+      "testis":[
+         "testis"
+      ],
+      "thymus":[
+         "thymus",
+         "thymic"
+      ],
+      "thyroid":[
+         "thyroid"
+      ],
+      "tonsil":[
+         "tonsil"
+      ],
+      "uterus":[
+         "uterus",
+         "endometrial",
+         "cervic"
       ]
    }
 }
