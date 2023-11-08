@@ -27,4 +27,5 @@ geo_id=$(sed -n "${SLURM_ARRAY_TASK_ID}p" $samplesheet)
 
 # run the script 
 outdir="results/sra/individual_gse/"
-$python scripts/geo_queries/Linking_GSE_to_SRA.py $geo_id $outdir
+echo "Executing $python scripts/geo_queries/Linking_GSE_to_SRA.py $geo_id $outdir"
+$python scripts/geo_queries/linking_gse_to_sra.py $geo_id $outdir

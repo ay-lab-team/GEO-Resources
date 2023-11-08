@@ -5,4 +5,4 @@ sed -n '1p' $first_fn > $combined_fn
 
 # concat the rest of the files
 #find results/sra/ -name "*.meta.major_columns.renamed.tsv" ! -name "combined*" -exec echo {} \;
-find results/sra/ -name "*.meta.major_columns.renamed.tsv" ! -name "combined*" -exec sed '1d' {} >> $combined_fn \;
+find results/sra/individual_gse/ -name "*.meta.major_columns.renamed.tsv" ! -name "combined*" -exec sed '1d' {} >> $combined_fn \;
