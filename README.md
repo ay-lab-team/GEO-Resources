@@ -90,8 +90,8 @@ and the only way to update these celltypes will be to use a completely manual ap
 
 Here's a Whimsical diagram of what we want to do: https://whimsical.com/new-cell-type-format-XSR4eLAg61iwrjmBmbkcbV
 and a screenshot for convenience:
-![image](uploads/bd6b20af2d7fabe40ab9f34ab4b31948/image.png)
 
+![Alt text](img/metadata-integration.png)
 
 The Main code/repo we use for this data extract of data is `GEO-Resources` NOT `geo-paper-tracker` which is used for compiling HiChIP papers only.
 
