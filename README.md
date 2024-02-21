@@ -5,10 +5,12 @@ GEO as part of the Loop Catalog. In particular, we have two modules:
 2) Given a list of GSMs, determine metadata for each sample including organ, etc.
 
 ## Locating HiChIP Datasets
-Briefly, this module using 
+Briefly, this module uses queries to the different NCBI database using the
+NCBI API directly as well as pysradb and other packages when necessary.
 
 
-Code & Execution:
+### Code & Execution:
+
 The scripts are located within: `cell-type-resources/scripts/geo_queries/`
 
 **1) query_geo.ipynb**
