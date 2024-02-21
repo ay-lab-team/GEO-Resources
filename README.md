@@ -19,6 +19,8 @@ Synopsis: Queries GEO DataSets (https://www.ncbi.nlm.nih.gov/gds)
 
 Output: results/geo/geo.query.{date}.xlsx
 
+<br>
+
 **2) slurm/link_gse_to_sra.{date}.sh & linking_gse_to_sra.py**
 
 Synopsis: Queries the SRA database for a given GSE ID and save a table of samples.
@@ -27,12 +29,15 @@ Input: results/sra/geo.samplesheet.{date}.txt # samplesheet where each line cont
 
 Output: results/sra/individual_gse/{gse_id}.meta.major_columns.renamed.tsv
 
+<br>
+
 **3) merge_sra_queries.sh**
 
 Synopsis: Merges all results from step (2)
 
 Output: results/sra/combined.meta.major_columns.renamed.tsv
 
+<br>
 
 ## Assigning Sample Metadata
 The main point of this module is to create metadata that is reliable and easy
