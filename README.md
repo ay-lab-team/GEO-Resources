@@ -35,19 +35,29 @@ Output: results/sra/individual_gse/{gse_id}.meta.major_columns.renamed.tsv
 
 Synopsis: Merges all results from step (2)
 
+Input: Individual GSE files from part (2)
+
 Output: results/sra/combined.meta.major_columns.renamed.tsv
 
 <br>
 
-## Assigning Sample Metadata
-The main point of this module is to create metadata that is reliable and easy
-to use for the Loop Catalog website. 
+## Assigning Sample Metadata from Biosample-based Information
+Quickly, this module creates metadata that is reliable and easy to use for the
+Loop Catalog website but is programmed in a generalized way to be used by anyone.
 
+The scripts/files are located within: `cell-type-resources/scripts/geo_celltypes/`
 
+**Code) gsm_to_celltype_metadata.ipynb**
+Synopsis: Takes in a list of GSM IDs then queries the Entrez Biosamples database
+looking for all possible notes that, in conjunction with the metadata dictionary
+(see detail below), will define different metadata such as organ, etc.
 
+**Helper File1) gsm_to_celltype_metadata.ipynb**
+Synopsis: JSON file that contains a dictionary for assiging a certain metadata term
+to a given sample.
 
 <!--
-For this first iteration we are parsing individual pages from Cellosaurus but eventually we want to download the whole Cellosaurus catalog which is available through: https://ftp.expasy.org/databases/cellosaurus/. From this FTP link there are three files that can be parsed: 1) tbd, 2) tbd, 3) tbd. As soon as we find good parsers we will decide on which file to use. 
+## Assigning Additional Sample Metadata for Cell Lines
 
 ## Getting started
 
