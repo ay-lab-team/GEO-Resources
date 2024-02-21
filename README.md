@@ -60,6 +60,40 @@ looking for all possible notes that, in conjunction with the metadata dictionary
 Synopsis: JSON file that contains a dictionary for assiging a certain metadata term
 to a given sample.
 
+### Details:
+
+After much research, we use a combination of schemas from ENCODE and the Human Cell
+Atlas. The main goal is that for each sample we can obtain as much metadata as
+possible to fill the celltype table which includes:
+- name
+- organism
+- biomaterial 
+- disease
+- organ
+- celltype
+- sex
+- age
+- extdb_name
+- extdb_uuid
+
+After that we systematically parse the information from BioSample notes, if some
+field cannot be filled then we assign “Missing”. This allows smooth insertion of
+samples/celltypes which is automatic and does not complicate adding new samples.
+
+In a separate step, samples with “Missing” fields can be updated semi-automatically.
+If the sample is a cell line then we parse Cellosaurus information, if it’s another
+biomaterial then we’ll look for an external database or perform a manual update.
+If some fields are still “Missing” then at this point we will assign “Unknown”
+and the only way to update these celltypes will be to use a completely manual approach.
+
+Here's a Whimsical diagram of what we want to do: https://whimsical.com/new-cell-type-format-XSR4eLAg61iwrjmBmbkcbV
+and a screenshot for convenience:
+![image](uploads/bd6b20af2d7fabe40ab9f34ab4b31948/image.png)
+
+
+The Main code/repo we use for this data extract of data is `GEO-Resources` NOT `geo-paper-tracker` which is used for compiling HiChIP papers only.
+
+
 <!--
 ## Assigning Additional Sample Metadata for Cell Lines
 
