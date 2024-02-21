@@ -13,6 +13,8 @@ NCBI API directly as well as pysradb and other packages when necessary.
 
 The scripts are located within: `cell-type-resources/scripts/geo_queries/`
 
+<br>
+
 **1) query_geo.ipynb**
 
 Synopsis: Queries GEO DataSets (https://www.ncbi.nlm.nih.gov/gds)
