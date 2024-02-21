@@ -45,7 +45,11 @@ Output: results/sra/combined.meta.major_columns.renamed.tsv
 Quickly, this module creates metadata that is reliable and easy to use for the
 Loop Catalog website but is programmed in a generalized way to be used by anyone.
 
+### Code & Execution:
+
 The scripts/files are located within: `cell-type-resources/scripts/geo_celltypes/`
+
+<br>
 
 **Code) gsm_to_celltype_metadata.ipynb**
 Synopsis: Takes in a list of GSM IDs then queries the Entrez Biosamples database
