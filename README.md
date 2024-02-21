@@ -1,6 +1,38 @@
-# Cell Type Resources
-The main point of this repository is to create cell type information that the Ay Lab finds reliable and easily usable from a programming/analysis standpoint. This initially started from the HiChIP website project but we wanted to keep it general for use across all projects.
+# GEO-Resources
+This repository was made in order to handle a variety of queries we make to the
+GEO as part of the Loop Catalog. In particular, we have two modules:
+1) Query the GEO database datasets containing HiChIP data + located their raw data.
+2) Given a list of GSMs, determine metadata for each sample including organ, etc.
 
+## Locating HiChIP Datasets
+Briefly, this module using 
+
+
+Code & Execution:
+The scripts are located within: `cell-type-resources/scripts/geo_queries/`
+
+**1) query_geo.ipynb**
+Synopsis: Queries GEO DataSets (https://www.ncbi.nlm.nih.gov/gds)
+Output: results/geo/geo.query.{date}.xlsx
+
+**2) slurm/link_gse_to_sra.{date}.sh & linking_gse_to_sra.py**
+Synopsis: Queries the SRA database for a given GSE ID and save a table of samples.
+Input: results/sra/geo.samplesheet.{date}.txt # samplesheet where each line contains a GSE ID
+Output: results/sra/individual_gse/{gse_id}.meta.major_columns.renamed.tsv
+
+**3) merge_sra_queries.sh**
+Synopsis: Merges all results from step (2)
+Output: results/sra/combined.meta.major_columns.renamed.tsv
+
+
+## Assigning Sample Metadata
+The main point of this module is to create metadata that is reliable and easy
+to use for the Loop Catalog website. 
+
+
+
+
+<!--
 For this first iteration we are parsing individual pages from Cellosaurus but eventually we want to download the whole Cellosaurus catalog which is available through: https://ftp.expasy.org/databases/cellosaurus/. From this FTP link there are three files that can be parsed: 1) tbd, 2) tbd, 3) tbd. As soon as we find good parsers we will decide on which file to use. 
 
 ## Getting started
@@ -36,3 +68,4 @@ To get cellosaurus meta data for your favorite cell lines please:
      8\) Category column has various values, including "Cancer cell line" and non-cancerous categories like "Transformed cell line".
 
      9\) Species column has various values. This example has all human cell lines, so the column only has "Homo sapiens" value.
+-->
