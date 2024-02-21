@@ -39,8 +39,6 @@ Input: Individual GSE files from part (2)
 
 Output: results/sra/combined.meta.major_columns.renamed.tsv
 
-<br>
-
 ## Assigning Sample Metadata from Biosample-based Information
 Quickly, this module creates metadata that is reliable and easy to use for the
 Loop Catalog website but is programmed in a generalized way to be used by anyone.
