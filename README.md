@@ -52,11 +52,13 @@ The scripts/files are located within: `cell-type-resources/scripts/geo_celltypes
 <br>
 
 **Code) gsm_to_celltype_metadata.ipynb**
+
 Synopsis: Takes in a list of GSM IDs then queries the Entrez Biosamples database
 looking for all possible notes that, in conjunction with the metadata dictionary
 (see detail below), will define different metadata such as organ, etc.
 
 **Helper File1) gsm_to_celltype_metadata.ipynb**
+
 Synopsis: JSON file that contains a dictionary for assiging a certain metadata term
 to a given sample.
 
