@@ -2,7 +2,40 @@
    "biomaterial":{
       "cell line":[
          "cellline",
-         "cell line"
+         "cell line",
+         "22rv1",
+         "3t3",
+         "a673",
+         "a-673",
+         "ark-1",
+         "colo320dm",
+         "colo 320dm",
+         "cutll1",
+         "g401",
+         "hara",
+         "hct116",
+         "imr90",
+         "imr-90",
+         "iose11",
+         "ishikawa",
+         "jn-dsrct1",
+         "jhuem-14",
+         "jhuem14",
+         "oci-ly7",
+         "snu16",
+         "snu-16",
+         "thp-1",
+         "u3009",
+         "u3028",
+         "u3031",
+         "u3039",
+         "u3042",
+         "u3054",
+         "u3073",
+         "u3078",
+         "u3086",
+         "u3121",
+         "vcap"
       ],
       "primary": [
          "attribute_name=\"patient\"",
@@ -89,15 +122,48 @@
          "vessel",
          "leukemia",
          "blood",
-         "haematopoietic"
+         "haematopoietic",
+         "pbmc",
+         "hudep2",
+         "hudep-2",
+         "erythroid",
+         "erythroblast",
+         "buffy coat",
+         "thp-1",
+         "oci-ly7",
+         "nalm6",
+         "nalm-6",
+         "loucy"
+      ],
+      "immune-associated": [
+         "thp-1",
+         "th17",
+         "monocyte",
+         "monocycte",
+         "t cell",
+         "lymphoblastoid",
+         "lymphocyte",
+         "gm12878",
+         "treg",
+         "jurkat",
+         "dentritic",
+         "b cell",
+         "cutll1",
+         "nk-92",
+         "nk92",
+         "cutll3"
       ],
       "bodily fluid":[
          "pleural",
-         "effusion"
+         "effusion",
+         "jn-dsrct1"
       ],
       "brain":[
          "brain",
-         "caudate"
+         "caudate",
+         "neural",
+         "neuron",
+         "astrocytes"
       ],
       "colon":[
          "colon",
@@ -105,9 +171,10 @@
       ],
       "embryo":[
          "embryo",
-         "mesc",
-         "hesc",
-         "umbilical"
+         "umbilical",
+         "fetal",
+         "embryonal",
+         "ectoderm"
       ],
       "esophagus":[
          "esophagus",
@@ -120,20 +187,36 @@
          "eye",
          "retina"
       ],
+      "fat":[
+          "fat",
+          "adipose"
+      ],
       "heart":[
          "heart",
          "cardi",
+         "cardiomyocytes",
          "ventricle",
+         "pulmonary artery",
+         "atria",
          "atrium",
-         "aortic"
+         "aortic",
+         "coronary"
       ],
       "intestine":[
          "intestine",
-         "fhc"
+         "fhc",
+         "duodenal",
+         "gastrointestinal"
       ],
       "kidney":[
          "kidney",
-         "podocyte"
+         "podocyte",
+         "fuur1",
+         "fu-ur-1",
+         "g-401",
+         "g401",
+         "hek293",
+         "hek 293"
       ],
       "liver":[
          "liver"
@@ -147,7 +230,9 @@
       ],
       "mammary gland":[
          "mammary",
-         "breast"
+         "breast",
+         "mda-mb-231",
+         "b80t5"
       ],
       "musculature of body":[
          "muscula",
@@ -161,13 +246,24 @@
          "spinal",
          "cortex"
       ],
+      "nose":[
+         "nasopharyngeal",
+         "olfactory"
+      ],
+      "other":[
+          "3t3",
+          "sms-ctr",
+          "smsctr"
+          
+      ],
       "ovary":[
          "ovary",
          "ovarian"
       ],
       "pancreas":[
          "pancreas",
-         "pancreatic"
+         "pancreatic",
+         "beta cell"
       ],
       "penis":[
          "penis"
@@ -176,23 +272,36 @@
          "placenta"
       ],
       "prostate":[
-         "prostate"
+         "prostate",
+         "22rv1",
+         "vcap"
       ],
       "skeletal system":[
          "bone",
          "marrow",
          "ewing sarcoma",
-         "myeloma"
+         "myeloma",
+         "chondrocyte"
       ],
       "skin":[
          "skin",
          "melanoma",
          "erythematosus",
          "keratinocyte",
-         "melanocyte"
+         "melanocyte",
+         "psoriasis"
       ],
       "spleen":[
          "spleen"
+      ],
+      "stem-associated":[
+         "mesc",
+         "hesc",
+         "ipsc",
+         "stem cell",
+         "stem-like",
+         "differentiating mes",
+         "differentiation"
       ],
       "stomach":[
          "stomach",
@@ -214,7 +323,8 @@
       "uterus":[
          "uterus",
          "endometrial",
-         "cervic"
+         "cervic",
+         "hela"
       ]
    }
 }
